@@ -1,19 +1,25 @@
 import random as r
 
-a = 0
+# a = 0
 
-while (a in [1,0]):
-	a = int(input("Enter the choice 1 or 0 and any other key to exit : "))
+# while (a in [1,0]):
+# 	a = int(input("Enter the choice 1 or 0 and any other key to exit : "))
 
-	if(a == r.choice([1,0])):
-		print("WIN")
-	elif(a not in [1,0]):
-		print("Thanks")
-		break
-	else: 
-		print("LOSE")
+# 	if(a == r.choice([1,0])):
+# 		print("WIN")
+# 	elif(a not in [1,0]):
+# 		print("Thanks")
+# 		break
+# 	else: 
+# 		print("LOSE")
 
-a = [1,2,3,4,5,6,7,8,9,10]
+# a = [1,2,3,4,5,6,7,8,9,10]
 
-for i in range (1,10,1):
-	print(a[r.randint(0,9)])
+# print(a[2:5])
+
+# for i in range (1,10):
+# 	print(a[r.randint(0,9)])
+
+people = ['karan','karan']
+
+print("The person to empty his pocket is",r.choice(people))
