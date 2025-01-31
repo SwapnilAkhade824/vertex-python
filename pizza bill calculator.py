@@ -69,7 +69,7 @@ while True:
 		print("Invalid Choice!!!")
 		break
 
-	print("Your Final Bill is : $",bill)
+	print(f"Your Final Bill is : ${bill:.2f}")
 	print("Thanks for using our service hope you enjoyed !")
 	break
 
