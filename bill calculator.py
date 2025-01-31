@@ -7,4 +7,4 @@ people = int(input("Enter total no of people involved : "))
 
 amt = bill/people*1.12
 
-print(f"\n{"\t"*4}The amount to be paid by each person : $",f"{amt:.2f}")
+print(f"\n{"\t"*4}The amount to be paid by each person : ${amt:.2f}")
