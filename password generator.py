@@ -13,9 +13,12 @@ num = int(input("Enter the no of digits you want : "))
 total_length = char + symb + num
 
 for i in range (0,total_length-1):
-	if i < char : password.append(r.choice(characters))
-	elif i < (char + symb) : password.append(r.choice(symbols))
-	else : password.append(r.choice(digits))
+	if i < char : 
+		password.append(r.choice(characters))
+	elif i < (char + symb) : 
+		password.append(r.choice(symbols))
+	else : 
+		password.append(r.choice(digits))
 
 # Easier Way
 
