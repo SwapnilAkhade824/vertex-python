@@ -21,7 +21,7 @@ for i in range (0,total_length-1):
 
 password = "".join(password)
 
-print("Your Required Password Easy :",password)
+print("Your Required Password EasyOne :",password)
 
 # Harder Way
 
