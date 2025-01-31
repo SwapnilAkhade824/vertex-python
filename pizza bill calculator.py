@@ -27,4 +27,57 @@ print("-"*100,"\n")
 
 while True:
 	ch = input("Enter your choice for size of the Pizza (S,M,L) : ").lower()
-	
+
+	if ch == 's' : 
+		bill += 15
+
+		ch = input("Add pepperoni for pizza (Y or N) : ").lower()
+
+		if ch in 'yn':		
+			if ch == 'y' :
+				bill += 2
+		else : 
+			print("Invalid Choice!!!")
+			break
+
+	elif ch == 'm' : 
+		bill += 20
+
+		ch = input("Add pepperoni for pizza (Y or N) : ").lower()
+
+		if ch in 'yn':		
+			if ch == 'y' :
+				bill += 3
+		else : 
+			print("Invalid Choice!!!")
+			break
+
+	elif ch == 'l' :
+		bill += 25
+
+		ch = input("Add pepperoni for pizza (Y or N) : ").lower()
+
+		if ch in 'yn':		
+			if ch == 'y' :
+				bill += 3
+		else : 
+			print("Invalid Choice!!!")
+			break
+	else : 
+		print("Invalid Choice!!!")
+		break
+
+	ch = input("Add extra cheese for the pizza (Y or N) : ").lower()
+
+	if ch in 'yn':		
+		if ch == 'y' :
+			bill += 1
+	else : 
+		print("Invalid Choice!!!")
+		break
+
+	print("Your Final Bill is : $",bill)
+	print("Thanks for using our service hope you enjoyed !")
+	break
+
+

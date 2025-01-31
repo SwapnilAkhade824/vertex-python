@@ -38,6 +38,6 @@ if (ch in ['R','P','S']):
     print(f"Engines Choice : {game[engch]}")
     print("\nResult\n")
     if(ch==engch): print("Tie")
-    elif(ch == 0 and engch == 2 or ch == 1 and engch == 0 or ch == 2 and engch == 1): print("Win")
-    else: print("Lost")
+    elif(ch == 0 and engch == 2 or ch == 1 and engch == 0 or ch == 2 and engch == 1): print("\tWin\n")
+    else: print("\tLost\n")
 else: print("Invalid Choice!!!")
