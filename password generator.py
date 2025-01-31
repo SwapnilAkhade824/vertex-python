@@ -25,8 +25,6 @@ print("Your Required Password EasyOne :",password)
 
 # Harder Way
 
-password = list(password)
-
 harder_password = []
 
 index = []
