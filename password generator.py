@@ -32,12 +32,12 @@ harder_password = []
 
 index = []
 
-for i in range (0,total_length-1):
-	ch = r.choice(password)
-	while password.index(ch) in index : 
-		ch = r.choice(password)
-	index.append(password.index(ch))
-	harder_password.append(ch)
+for i in range (0,len(password)):
+	place = r.randint(0,len(password)-1)
+	while place in index : 
+		place = r.randint(0,len(password)-1)
+	index.append(place)
+	harder_password.append(password[place])
 
 harder_password = "".join(harder_password)
 
