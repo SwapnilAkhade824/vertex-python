@@ -27,7 +27,7 @@
 
 main_menu = ["Espresso","Cappuccino","Latte","Americano","Mocha","Macchiato","Hot Water","Exit"]
 
-base_price = [2.5, 3.5, 4.3, 4.5, 3.75, 0.5]
+base_price = [2.5, 3.5, 4, 3, 4.5, 3.75, 0.5]
 
 size_menu = ["Small","Medium","Large"]
 
@@ -35,7 +35,7 @@ size_price = [0, 0.5, 1]
 
 extra_addons_menu = ["Sugar","Milk","Extra Shot of Espresso","Whipped Cream","Vanilla Syrup","No Add-ons"]
 
-addons_price = [0, 0.25, 1, 0.5]
+addons_price = [0, 0.25, 1, 0.5, 0.75, 0.75, 0]
 
 while True:
 	
@@ -69,7 +69,7 @@ while True:
 
 	# checking for the invalid choice
 
-	if choice_coffee not in range(len(size_menu)):
+	if choice_size not in range(len(size_menu)):
 
 		print("Invalid Choice !!!")
 
@@ -85,13 +85,13 @@ while True:
 
 	# checking for the invalid choice
 
-	if choice_coffee not in range(len(extra_addons_menu)):
+	if choice_addons not in range(len(extra_addons_menu)):
 
 		print("Invalid Choice !!!")
 
 		continue
 
-	amount = base_price[choice_size-1] + size_price[choice_size-1] + addons_price[choice_addons-1]
+	amount = base_price[choice_coffee-1] + size_price[choice_size-1] + addons_price[choice_addons-1]
 
 	print("\nYour Coffee is Ready: \n")
 
